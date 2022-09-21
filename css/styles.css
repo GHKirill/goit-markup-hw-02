@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-black-color: #212121;
+  --secondary-black-color: #757575;
+  --primary-back-ground-color: #f5f5f5;
+  --secondary-back-ground-color: #f5f4fa;
+  --third-back-ground-color: #2f303a;
+  --accent-color: #2196f3;
+  --font-Roboto: 'Roboto', sans-serif;
+  --font-Railway: 'Raleway', sans-serif;
+}
+body {
+  color: var(--primary-black-color);
+  background-color: var(--primary-back-ground-color);
+  font-family: var(--font-Roboto);
+}
+.list {
+  list-style: none;
+}
+
+/* navigation */
+.logo {
+  color: #000000;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+.nav .item {
+  color: var(--primary-black-color);
+}
+.nav .item:hover,
+.nav .item:focus {
+  color: var(--accent-color);
+}
+.auth .item {
+  color: var(--secondary-black-color);
+}
+.auth .item:hover,
+.auth .item:focus {
+  color: var(--accent-color);
+}
+/* advantages */
+.advantages .title {
+  color: var(--primary-black-color);
+}
+.advantages .text {
+  color: var(--secondary-black-color);
+}

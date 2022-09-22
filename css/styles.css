@@ -1,51 +1,192 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 :root {
   --primary-black-color: #212121;
   --secondary-black-color: #757575;
-  --primary-back-ground-color: #f5f5f5;
-  --secondary-back-ground-color: #f5f4fa;
-  --third-back-ground-color: #2f303a;
+  --primary-white-color: #ffffff;
+  --primary-back-ground-color: #ffffff;
+  --secondary-back-ground-color: #2f303a;
+
   --accent-color: #2196f3;
-  --font-Roboto: 'Roboto', sans-serif;
-  --font-Railway: 'Raleway', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
 }
 body {
   color: var(--primary-black-color);
   background-color: var(--primary-back-ground-color);
-  font-family: var(--font-Roboto);
+  font-family: var(--font-roboto);
 }
 .list {
   list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 
 /* navigation */
 .logo {
   color: #000000;
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
-.logo-accent {
+.accent {
   color: var(--accent-color);
 }
-.nav .item {
+.nav-link {
+  color: var(--primary-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link.accent {
+  color: var(--accent-color);
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-contact:hover,
+.nav-contact:focus {
+  color: var(--accent-color);
+}
+.nav-contact {
+  color: var(--secondary-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Hero */
+.hero {
+  background-color: #2f303a;
+  color: var(--primary-white-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: inherit;
+  font: inherit;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* Advantages */
+.advantages-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.14;
+  text-transform: uppercase;
+}
+.advantages-text {
+  color: var(--secondary-black-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Activities */
+.activities-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* team */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-job {
+  color: var(--secondary-black-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary-back-ground-color);
+}
+.footer .logo {
+  color: var(--primary-white-color);
+}
+.address {
+  font-style: normal;
+}
+.address-place {
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Portfolio */
+/* Examples */
+.examples .link {
   color: var(--primary-black-color);
 }
-.nav .item:hover,
-.nav .item:focus {
-  color: var(--accent-color);
-}
-.auth .item {
-  color: var(--secondary-black-color);
-}
-.auth .item:hover,
-.auth .item:focus {
-  color: var(--accent-color);
-}
-/* advantages */
-.advantages .title {
+.examples .button {
   color: var(--primary-black-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-.advantages .text {
+.examples .button:hover,
+.examples .button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.examples .item-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.examples .item-type {
   color: var(--secondary-black-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }

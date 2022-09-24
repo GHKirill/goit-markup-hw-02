@@ -1,24 +1,24 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
 :root {
   --primary-black-color: #212121;
   --secondary-black-color: #757575;
   --primary-white-color: #ffffff;
-  --primary-back-ground-color: #ffffff;
   --secondary-back-ground-color: #2f303a;
+  --white-alfa-color: rgba(255, 255, 255, 0.6);
 
   --accent-color: #2196f3;
+  --accent-color-main-button: #188ce8;
+  --gray-button-color: #f5f4fa;
+  --logo-black-color: #000000;
+  --gray-team-color: F5F4FA;
+
   --font-roboto: 'Roboto', sans-serif;
   --font-raleway: 'Raleway', sans-serif;
 }
 body {
   color: var(--primary-black-color);
-  background-color: var(--primary-back-ground-color);
+  background-color: var(--primary-white-color);
   font-family: var(--font-roboto);
   font-size: 14px;
-  font-weight: 400;
 }
 .list {
   list-style: none;
@@ -29,20 +29,21 @@ body {
 
 /* navigation */
 .logo {
-  color: #000000;
+  color: var(--logo-black-color);
   font-family: var(--font-raleway);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
 .accent {
   color: var(--accent-color);
 }
+
 .nav-link {
   color: var(--primary-black-color);
   font-weight: 500;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 .nav-link.accent {
@@ -53,23 +54,24 @@ body {
 .nav-contact:hover,
 .nav-contact:focus {
   color: var(--accent-color);
+  cursor: pointer;
 }
 .nav-contact {
   color: var(--secondary-black-color);
   font-weight: 500;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 
 /* Hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--secondary-back-ground-color);
   color: var(--primary-white-color);
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.35;
+  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -80,53 +82,52 @@ body {
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
 }
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--accent-color-main-button);
+  cursor: pointer;
+}
 /* Advantages */
 .advantages-item {
-  font-weight: 700;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .advantages-text {
   color: var(--secondary-black-color);
-  line-height: 1.7;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 
 /* Activities */
-.activities-title {
-  font-weight: 700;
+.activities-title,
+.team-title {
   font-size: 36px;
-  line-height: 1.17;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
 /* team */
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.team {
+  background-color: var(--gray-team-color);
 }
-.team-name {
+.team-card {
+  background-color: var(--primary-white-color);
+}
+.team-name,
+.team-job {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
 .team-job {
   color: var(--secondary-black-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -139,15 +140,20 @@ body {
 .address {
   font-style: normal;
 }
-.address-place {
+.address-place,
+.address-contact {
   color: var(--primary-white-color);
-  line-height: 1.7;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 .address-contact {
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  color: var(--white-alfa-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Portfolio */
@@ -155,29 +161,37 @@ body {
 .examples .link {
   color: var(--primary-black-color);
 }
-.examples .button {
+.examples-button {
   color: var(--primary-black-color);
-  background-color: #f5f4fa;
+  background-color: var(--gray-button-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
-.examples .button:hover,
-.examples .button:focus {
+.examples-button:hover,
+.examples-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.examples-button.accent-button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.examples .item-project {
-  font-weight: 700;
+.item-project {
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(26 / 18);
   letter-spacing: 0.06em;
 }
-.examples .item-type {
+.item-type {
   color: var(--secondary-black-color);
   font-size: 16px;
-  line-height: 1.9;
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
+}
+.examples .item:hover,
+.examples .item:focus {
+  cursor: pointer;
 }

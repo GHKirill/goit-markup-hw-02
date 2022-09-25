@@ -7,9 +7,8 @@
 
   --accent-color: #2196f3;
   --accent-color-main-button: #188ce8;
-  --gray-button-color: #f5f4fa;
+  --gray-color: #f5f4fa;
   --logo-black-color: #000000;
-  --gray-team-color: F5F4FA;
 
   --font-roboto: 'Roboto', sans-serif;
   --font-raleway: 'Raleway', sans-serif;
@@ -93,6 +92,7 @@ body {
 }
 /* Advantages */
 .advantages-item {
+  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -113,7 +113,7 @@ body {
 }
 /* team */
 .team {
-  background-color: var(--gray-team-color);
+  background-color: var(--gray-color);
 }
 .team-card {
   background-color: var(--primary-white-color);
@@ -163,7 +163,7 @@ body {
 }
 .examples-button {
   color: var(--primary-black-color);
-  background-color: var(--gray-button-color);
+  background-color: var(--gray-color);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
